@@ -13,9 +13,9 @@ if (!admin.apps.length) {
         admin.initializeApp({
             credential: admin.credential.cert(serviceAccount)
         });
-    } catch (err) {
-        if (err instanceof Error) {
-            console.log(`Error: Firebase admin could not be initialized.\n${err.stack}`);
+    } catch (e) {
+        if (e instanceof Error) {
+            console.log(`Error: Firebase admin could not be initialized.\n${e.stack}`);
         }
     }
 }
