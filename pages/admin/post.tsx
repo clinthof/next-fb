@@ -38,3 +38,5 @@ const Post: React.FC = () => {
         </div>
     )
 }
+
+export default Post;
