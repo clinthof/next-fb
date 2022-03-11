@@ -1,7 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import db from '../../../utils/db';
 
-
 const endpointHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     const { id } = req.query;
     const collectionDoc = db.collection('entries').doc(id as string);
